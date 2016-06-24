@@ -5,7 +5,9 @@
 //  Created by Dory on 23/6/16.
 //  Copyright © 2016年 www.visualogies.com. All rights reserved.
 //
-
+/**
+ *  使用按钮的子类实现倒计时功能
+ */
 #import <UIKit/UIKit.h>
 
 @interface DLCountDownButton : UIButton
