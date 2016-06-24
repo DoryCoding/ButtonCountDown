@@ -15,6 +15,8 @@
 		2FDB04121D1C133D00EAE4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDB04101D1C133D00EAE4E7 /* LaunchScreen.storyboard */; };
 		2FDB041D1D1C133D00EAE4E7 /* ButtonCountDownDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB041C1D1C133D00EAE4E7 /* ButtonCountDownDemoTests.m */; };
 		2FDB04281D1C133D00EAE4E7 /* ButtonCountDownDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB04271D1C133D00EAE4E7 /* ButtonCountDownDemoUITests.m */; };
+		2FDB04381D1C145400EAE4E7 /* DLCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB04371D1C145400EAE4E7 /* DLCountDownButton.m */; };
+		2FDB04431D1CC14600EAE4E7 /* UIButton+DLCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB04421D1CC14600EAE4E7 /* UIButton+DLCountDown.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		2FDB04231D1C133D00EAE4E7 /* ButtonCountDownDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonCountDownDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDB04271D1C133D00EAE4E7 /* ButtonCountDownDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonCountDownDemoUITests.m; sourceTree = "<group>"; };
 		2FDB04291D1C133D00EAE4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FDB04361D1C145400EAE4E7 /* DLCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCountDownButton.h; sourceTree = "<group>"; };
+		2FDB04371D1C145400EAE4E7 /* DLCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLCountDownButton.m; sourceTree = "<group>"; };
+		2FDB04411D1CC14600EAE4E7 /* UIButton+DLCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DLCountDown.h"; sourceTree = "<group>"; };
+		2FDB04421D1CC14600EAE4E7 /* UIButton+DLCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DLCountDown.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		2FDB03F61D1C133D00EAE4E7 = {
 			isa = PBXGroup;
 			children = (
+				2FDB04401D1CC14600EAE4E7 /* UIButton+DLCountDown */,
+				2FDB04351D1C143D00EAE4E7 /* DLButtonCountDown */,
 				2FDB04011D1C133D00EAE4E7 /* ButtonCountDownDemo */,
 				2FDB041B1D1C133D00EAE4E7 /* ButtonCountDownDemoTests */,
 				2FDB04261D1C133D00EAE4E7 /* ButtonCountDownDemoUITests */,
@@ -138,6 +146,24 @@
 				2FDB04291D1C133D00EAE4E7 /* Info.plist */,
 			);
 			path = ButtonCountDownDemoUITests;
+			sourceTree = "<group>";
+		};
+		2FDB04351D1C143D00EAE4E7 /* DLButtonCountDown */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB04361D1C145400EAE4E7 /* DLCountDownButton.h */,
+				2FDB04371D1C145400EAE4E7 /* DLCountDownButton.m */,
+			);
+			path = DLButtonCountDown;
+			sourceTree = "<group>";
+		};
+		2FDB04401D1CC14600EAE4E7 /* UIButton+DLCountDown */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB04411D1CC14600EAE4E7 /* UIButton+DLCountDown.h */,
+				2FDB04421D1CC14600EAE4E7 /* UIButton+DLCountDown.m */,
+			);
+			path = "UIButton+DLCountDown";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +233,7 @@
 				TargetAttributes = {
 					2FDB03FE1D1C133D00EAE4E7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7C42L52533;
 					};
 					2FDB04171D1C133D00EAE4E7 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -270,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FDB04431D1CC14600EAE4E7 /* UIButton+DLCountDown.m in Sources */,
 				2FDB040A1D1C133D00EAE4E7 /* ViewController.m in Sources */,
+				2FDB04381D1C145400EAE4E7 /* DLCountDownButton.m in Sources */,
 				2FDB04071D1C133D00EAE4E7 /* AppDelegate.m in Sources */,
 				2FDB04041D1C133D00EAE4E7 /* main.m in Sources */,
 			);
@@ -415,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ButtonCountDownDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visualogies.ButtonCountDownDemo;
@@ -426,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ButtonCountDownDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visualogies.ButtonCountDownDemo;
